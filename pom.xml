@@ -15,7 +15,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.9.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
@@ -40,7 +40,28 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- JPA/MYSQL -->
+		<dependency>
+			<groupId> org.springframework.data </groupId>
+			<artifactId> spring-data-jpa </artifactId>
+		</dependency>
+		<dependency>
+			<groupId> mysql </groupId>
+			<artifactId> mysql-connector-java </artifactId>
+		</dependency>
+		<!-- JPA/MYSQL -->
 	</dependencies>
+	<repositories>
+		<repository>
+			<id> spring-libs-release </id>
+			<name> Spring Releases </name>
+			<url> https://repo.spring.io/libs-release </url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>

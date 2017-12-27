@@ -1,0 +1,2 @@
+##subir mysql local no docker para testar a aplicação
+docker run -p 3306:3306 --name mysql-spring-boot-template -e MYSQL_ROOT_PASSWORD=cafe123 -d mysql
