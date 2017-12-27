@@ -51,6 +51,14 @@
 			<artifactId> mysql-connector-java </artifactId>
 		</dependency>
 		<!-- JPA/MYSQL -->
+
+		<!-- H2 -->
+		<dependency>
+			<groupId> com.h2database </groupId>
+			<artifactId> h2 </artifactId>
+			<scope> runtime </scope>
+		</dependency>
+		<!-- H2 -->
 	</dependencies>
 	<repositories>
 		<repository>
