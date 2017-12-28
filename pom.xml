@@ -41,24 +41,22 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- JPA/MYSQL -->
+		<!-- JPA, MySQL e H2 -->
 		<dependency>
-			<groupId> org.springframework.data </groupId>
-			<artifactId> spring-data-jpa </artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		<dependency>
-			<groupId> mysql </groupId>
-			<artifactId> mysql-connector-java </artifactId>
-		</dependency>
-		<!-- JPA/MYSQL -->
 
-		<!-- H2 -->
 		<dependency>
-			<groupId> com.h2database </groupId>
-			<artifactId> h2 </artifactId>
-			<scope> runtime </scope>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
 		</dependency>
-		<!-- H2 -->
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
 	</dependencies>
 	<repositories>
 		<repository>
